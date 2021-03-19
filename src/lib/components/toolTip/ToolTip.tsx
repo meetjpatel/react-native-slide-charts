@@ -230,6 +230,7 @@ const styles = StyleSheet.create({
   },
   square: {
     position: 'absolute',
+    marginTop: 9.5,
     top: 0,
     left: 0,
     flexDirection: 'column',
@@ -249,6 +250,7 @@ const styles = StyleSheet.create({
     }),
   },
   triangleContainer: {
+    paddingTop: 12,
     position: 'absolute',
     ...Platform.select({
       android: {
