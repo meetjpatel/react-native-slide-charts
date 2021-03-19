@@ -23,11 +23,12 @@ class CursorIndicator extends Component<CursorIndicatorProps> {
   render() {
     const { cursorRadius, borderColor, backgroundColor } = this.props
     const cursorStyle = {
-      width: cursorRadius * 2,
-      height: cursorRadius * 2,
-      borderRadius: cursorRadius,
+      width: 3 * 2,
+      height: 3 * 2,
+      borderRadius: 4,
       borderColor,
-      backgroundColor,
+      backgroundColor
+      
     }
     return (
       <Animated.View
@@ -40,8 +41,10 @@ class CursorIndicator extends Component<CursorIndicatorProps> {
 
 const styles = StyleSheet.create({
   cursor: {
+    marginTop:7,
+    marginLeft: 9,
     position: 'absolute',
-    borderWidth: 6,
+    borderWidth: 0,
     ...Platform.select({
       ios: {
         shadowColor: 'black',
